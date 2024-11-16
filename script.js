@@ -1,6 +1,6 @@
 // JavaScript function to show an alert message
 function showMessage() {
-    alert('Ju nuk keni para që ta bleni këtë produkt');
+    alert('Ju keni kryer me sukses blerjen');
 }
 
 
