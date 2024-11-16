@@ -1,6 +1,6 @@
 // JavaScript function to show an alert message
 function showMessage() {
-    alert('Ju keni kryer me sukses blerjen');
+    alert('Ju keni kryer me sukses blerjen në faqe');
 }
 
 
