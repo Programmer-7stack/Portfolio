@@ -1,0 +1,335 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+header#aboutme {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 40px;
+    background-color: white;
+    margin: 20px auto;
+    max-width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    animation: fadeIn 1.5s;
+}
+
+.about img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    object-fit: cover;
+}
+
+/* Skills Section */
+#skills {
+    background-color: #e0f7fa;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.skill {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.3s;
+}
+
+.skill:hover {
+    transform: translateY(-5px);
+}
+
+/* Projects Section */
+#projects {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.project {
+    background: white;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Contact Section */
+#contact {
+    background: #fff3e0;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+form input, form textarea, form button {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    background-color: blue;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: darkblue;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Basic Reset This style is for index html*/ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Styling */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Logo Styling */
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Navigation Links Styling */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+}
+
+.nav-links li a:hover {
+    background-color: #555;
+    border-radius: 5px;
+
+}
+
+/* Search Bar Styling */
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.search-bar input[type="text"] {
+    padding: 5px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    background-color: #ff6600;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+    background-color: #ff4500;
+}
+
+/* Main Content Styling */
+main {
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Product Section Grid */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 10px;
+}
+
+/* Product Card Styling */
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.product-card h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+    color: #333;
+}
+
+.product-card p {
+    font-size: 1.1em;
+    color: #888;
+}
+
+.product-card button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #ff6600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.product-card button:hover {
+    background-color: #ff4500;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+#left {
+    position: absolute;
+    left: 700px;
+    bottom: -400px;
+}
+
+
+/* Style for the top image */
+.top-image {
+  
+  width: 7%;      /* Makes the image span the full width of the page */
+  height: auto;     /* Maintains the aspect ratio */
+  display: block;   /* Ensures no extra space around the image */
+}
+
+/* Optional: Center the content below the image */
+.content {
+  text-align: center;
+  padding: 20px;
+}
+
+/* General styles */
+#aboutme1 {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: lightblue;
+    color: #333;
+    border: 2px solid lightblue;
+}
+
+/* Header styles */
+#aboutme {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border:2px solid lightblue;
+}
+
+/* About section styles */
+.about {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    border:2px solid blue;
+}
+
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Light background */
+}
+
+/* Header Styling */
+header#aboutme {
+    background-color: blue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
