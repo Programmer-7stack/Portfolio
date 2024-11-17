@@ -197,6 +197,31 @@
 
 
 
+<!-- Modal for Card Information -->
+<div id="cardModal" class="modal">
+    <div class="modal-content">
+        <span class="close-button" onclick="closeModal()">&times;</span>
+        <h2>Futni të dhënat e kartës suaj:</h2>
+        <form id="paymentForm">
+            <label for="cardNumber">Numri i kartës:</label>
+            <input type="text" id="cardNumber" placeholder="Futni numrin e kartës" required>
+
+            <label for="cardExpiry">Data e skadimit:</label>
+            <input type="text" id="cardExpiry" placeholder="MM/YY" required>
+
+            <label for="cardCVV">CVV:</label>
+            <input type="text" id="cardCVV" placeholder="CVV" required>
+
+            <label for="cardName">Emri i mbajtësit të kartës:</label>
+            <input type="text" id="cardName" placeholder="Emri në kartë" required>
+
+            <button type="submit" onclick="processPayment(event)">BLEJ TANI</button>
+        </form>
+    </div>
+</div>
+
+
+
 
 <!-- Contact Section -->
 <section id="contact">
