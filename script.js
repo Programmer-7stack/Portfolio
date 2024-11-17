@@ -10,6 +10,6 @@ function closeModal() {
 
 function processPayment(event) {
     event.preventDefault();
-    alert("Blerja e produktit eshte kryer me sukses!");
+    alert("Blerja e produktit është kryer me sukses!");
     closeModal(); // Close the modal after payment
 }
