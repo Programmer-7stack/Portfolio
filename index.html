@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="index.html">
     <link rel="stylesheet" type="text/css" href="style.css">
     <script src="script.js"></script>
+   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css">
+
 
 </head>
 <body>
@@ -203,17 +205,19 @@
         <span class="close-button" onclick="closeModal()">&times;</span>
         <h2>Futni të dhënat e kartës suaj:</h2>
         <form id="paymentForm" >
-            <label for="cardNumber">Numri i kartës:</label>
-            <input type="number" id="cardNumber" placeholder="Futni numrin e kartës" required>
 
-            <label for="cardExpiry">Data e skadimit:</label>
-            <input type="number" id="cardExpiry" placeholder="MM/YY" required>
-
-            <label for="cardCVV">CVV:</label>
-            <input type="number" id="cardCVV" placeholder="CVV" required>
-
-            <label for="cardName">Emri i mbajtësit të kartës:</label>
+            <label for="cardName"><i class="fas fa-user"></i>Emri i mbajtësit të kartës:</label>
             <input type="text" id="cardName" placeholder="Emri në kartë" required>
+
+            <label for="cardNumber"><i class="far fa-credit-card"></i>Numri i kartës:</label>
+            <input type="number" id="cardNumber" data-mask="0000 0000 0000 0000" placeholder="Futni numrin e kartës" required>
+
+            <label for="cardExpiry"><i class="far fa-calendar-alt"></i>Data e skadimit:</label>
+            <input type="number" id="cardExpiry" data-mask="00 / 00" placeholder="MM/YY" required>
+
+            <label for="cardCVV"><i class="fas fa-lock"></i>CVV:</label>
+            <input type="number" id="cardCVV" data-mask="000" placeholder="CVV" required>
+
 
             <button type="submit" onclick="processPayment(event)">BLEJ TANI</button>
         </form>
