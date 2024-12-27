@@ -197,6 +197,8 @@ footer {
     box-sizing: border-box;
 }
 
+
+/*Projects */
 .projects-section {
     text-align: center;
     padding: 50px 20px;
@@ -251,4 +253,3 @@ footer {
     text-decoration: none;
     color: #30bae7;
 }
-
