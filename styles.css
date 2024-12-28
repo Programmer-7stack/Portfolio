@@ -9,12 +9,24 @@ body {
 }
 
 /* Header */
-header #aboutme {
+header #aboutme .link3{
     background-color: blue;
     color: white;
     padding: 20px;
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+#aboutme .link3 {
+    color: white;
+    font-size: 33px;
+}
+
+@media (max-width:600px) {
+    #aboutme .link3 {
+        color: white;
+        font-size: 29px;
+    }
 }
 
 /* Header styles */
@@ -164,6 +176,15 @@ footer {
     color: white;
     padding: 10px;
     text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 4px;
+}
+
+
+footer .a2 {
+    color: white;
 }
 
 
@@ -196,6 +217,7 @@ footer {
     padding: 0;
     box-sizing: border-box;
 }
+
 
 
 /*Projects */
