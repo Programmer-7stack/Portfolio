@@ -8,6 +8,14 @@ body {
     color: #333;
 }
 
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
 /* Header */
 header #aboutme .link3{
     background-color: blue;
@@ -16,6 +24,16 @@ header #aboutme .link3{
     text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
+
+/* Style for the top image */
+.top-image {
+  
+  width: 7%;      /* Makes the image span the full width of the page */
+  height: auto;     /* Maintains the aspect ratio */
+  display: block;   /* Ensures no extra space around the image */
+}
+
+
 
 #aboutme .link3 {
     color: white;
@@ -71,6 +89,7 @@ header #aboutme .link3{
     object-fit: cover;
 }
 
+
 /* Skills Section */
 #skills {
     background-color: #e0f7fa;
@@ -98,6 +117,7 @@ header #aboutme .link3{
     transform: translateY(-5px);
 }
 
+
 /* Projects Section */
 #projects {
     padding: 40px 20px;
@@ -112,114 +132,6 @@ header #aboutme .link3{
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
-#contact {
-    text-align: center;
-    background-color: #3c5499;
-}
-
-#contact h2 {
-    color: #fff;
-    font-size: 28px;
-    text-transform: uppercase;
-    padding: 10px 0px;
-}
-
-
-
-#contact .form-container  form{ 
-    width: 100%;
-    max-width: 600px;
-    margin: auto;
- }
-
- #contact .form-container input,
- #contact .form-container textarea {
-    width: 100%;
-    padding: 15px 10px;
-    background-color: #273A71;
-    color: #fff;
-    border: none;
-    border-radius: 6px;
- }
-
-
- #contact .form-container .two-input {
-    display: flex;
-    flex-direction: row;
-    gap: 10px;
-    margin: 10px 0px;
- }
-
-
-#contact .form-container input::placeholder {
-    color: #fff;
-
-}
-
-#contact .form-container textarea::placeholder {
-    color: #fff;
-}
-
-#contact .form-container input[type="submit"] {
-    margin: 40px 0px;
-    max-width: 200px;
-    background-color: #30bae7;
-    text-transform: uppercase;
-}
-
-
-
-/* Footer */
-footer {
-    background: black;
-    color: white;
-    padding: 10px;
-    text-align: center;
-    display: flex;
-    justify-content: space-evenly;
-    text-align: center;
-    gap: 4px;
-}
-
-
-footer .a2 {
-    color: white;
-    font-size: 25px;
-
-}
-
-
-
-#left {
-    position: absolute;
-    left: 700px;
-    bottom: -400px;
-}
-
-
-/* Style for the top image */
-.top-image {
-  
-  width: 7%;      /* Makes the image span the full width of the page */
-  height: auto;     /* Maintains the aspect ratio */
-  display: block;   /* Ensures no extra space around the image */
-}
-
-/* Optional: Center the content below the image */
-.content {
-  text-align: center;
-  padding: 20px;
-}
-
-
-/* Base Styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 
 
 /*Projects */
@@ -276,4 +188,81 @@ footer .a2 {
 .projects-section .link {
     text-decoration: none;
     color: #30bae7;
+}
+
+
+/*Contact Form*/
+#contact {
+    text-align: center;
+    background-color: #3c5499;
+}
+
+#contact h2 {
+    color: #fff;
+    font-size: 28px;
+    text-transform: uppercase;
+    padding: 10px 0px;
+}
+
+
+
+#contact .form-container  form{ 
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+ }
+
+ #contact .form-container input,
+ #contact .form-container textarea {
+    width: 100%;
+    padding: 15px 10px;
+    background-color: #273A71;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+ }
+
+
+ #contact .form-container .two-input {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 10px 0px;
+ }
+
+
+#contact .form-container input::placeholder {
+    color: #fff;
+
+}
+
+#contact .form-container textarea::placeholder {
+    color: #fff;
+}
+
+#contact .form-container input[type="submit"] {
+    margin: 40px 0px;
+    max-width: 200px;
+    background-color: #30bae7;
+    text-transform: uppercase;
+}
+
+
+/* Footer */
+footer {
+    background: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    gap: 4px;
+}
+
+
+footer .a2 {
+    color: white;
+    font-size: 25px;
+
 }
