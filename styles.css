@@ -49,6 +49,8 @@ header #aboutme .link3{
 
 /* Header styles */
 #aboutme {
+    position: sticky;
+    top: 0;
     background-color: blue;
     color: white;
     padding: 20px;
