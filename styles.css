@@ -8,7 +8,7 @@ body {
     color: #333;
 }
 
-/* Base Styles */
+/* Stilizimi Baze */
 * {
     margin: 0;
     padding: 0;
@@ -25,12 +25,12 @@ header #aboutme .link3{
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-/* Style for the top image */
+/* Stilizimi për imazhin e sipërm */
 .top-image {
   
-  width: 7%;      /* Makes the image span the full width of the page */
-  height: auto;     /* Maintains the aspect ratio */
-  display: block;   /* Ensures no extra space around the image */
+  width: 7%;      /* Bën që imazhi të shtrihet në të gjithë gjerësinë e faqes */
+  height: auto;     /* Ruan raportin e pamjes */
+  display: block;   /* Nuk siguron hapësirë shtesë rreth imazhit */
 }
 
 
